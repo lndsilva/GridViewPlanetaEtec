@@ -20,6 +20,7 @@ public class RecebePlaneta_Activity extends AppCompatActivity {
         nomePlaneta = findViewById(R.id.txtRecebePaneta);
         imgPlaneta = findViewById(R.id.imgRecebePlaneta);
 
+        //Irá receber os dados da outra activity
         Intent intent = getIntent();
 
         String nomeP = intent.getStringExtra("name");
@@ -27,9 +28,6 @@ public class RecebePlaneta_Activity extends AppCompatActivity {
 
         nomePlaneta.setText(nomeP);
         imgPlaneta.setImageResource(imagemP);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
     }
 }
